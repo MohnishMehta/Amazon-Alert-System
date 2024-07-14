@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Lemon-Milk-Light';
+    src: url(../static/LEMONMILK-Light.otf);
+}
+@font-face{
+    font-family: "Lemon-Milk-Regular";
+    src: url(../static/LEMONMILK-Regular.otf);
+}
+*{
+    margin: 0;
+    background-color: #24252A;
+    font-family: Lemon-Milk-Light;
+    color:white;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Take up full height of the viewport */
+}
+.logo{
+    font-family: Lemon-Milk-Regular;
+    margin-right: auto;
+}
+
+.logo-img{
+    height: 2em;
+    vertical-align: middle;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    font-family: serif;
+    border: 1px solid white;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+}
+.instructions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100%;
+}
+
+.instructions iframe{
+    padding-right: 20px;
+}
+.instructions p {
+    font-size: 30px;
+    flex: 1;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.here{
+    color: blue;
+}
+
+.about-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px
+}
+
+.about{
+    flex:1
+    text-align: center;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 50px;
+    box-sizing: border-box;
+}
+
+.instructions-container{
+    height: 80%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.submission {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

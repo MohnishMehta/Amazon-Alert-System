@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Alert System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <nav class = "navbar">
+        <ul>
+            <li><img class = "logo-img" src="{{ url_for('static', filename='alert.png') }}"></li>
+            <li class = "logo">Amazon Alert System</li>
+            <li><a href = {{url_for('alert_system')}}>Alert System</a></li>
+            <li><a href = {{url_for('app_password')}}>App Password</a></li>
+            <li><a href = {{url_for('about')}}>About</a></li>
+            <li><a href ={{url_for('instructions')}}>Instructions</a></li>
+        </ul>
+    </nav>
+
+    <div class = "about-container">
+        <div class = about>
+            <h1>Why use the Amazon Alert System?</h1>
+        </div>
+        <div class = "about">
+            <p>Ever wanted to buy an item on amazon whether it be a new shirt, t.v, or a gift for your loved one, but don't have the money to do so or maybe you just want a sale! With the Amazon Alert System you can buy your items at the price you want! Simply enter your name, the amazon product link, the price you want to buy at, and your email and email's app password, and wait to receive an email once the product is lower or at the price you want!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Alert System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+ <nav class = "navbar">
+        <ul>
+            <li><img class = "logo-img" src="{{ url_for('static', filename='alert.png') }}"></li>
+            <li class = "logo">Amazon Alert System</li>
+            <li><a href = {{url_for('alert_system')}}>Alert System</a></li>
+            <li><a href = {{url_for('app_password')}}>App Password</a></li>
+            <li><a href = {{url_for('about')}}>About</a></li>
+            <li><a href ={{url_for('instructions')}}>Instructions</a></li>
+        </ul>
+    </nav>
+    <div class = " submission">
+        <h1>Thank you for submitting! We will email you to alert you! </h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Alert System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <nav class = "navbar">
+        <ul>
+            <li><img class = "logo-img" src="{{ url_for('static', filename='alert.png') }}"></li>
+            <li class = "logo">Amazon Alert System</li>
+            <li><a href = {{url_for('alert_system')}}>Alert System</a></li>
+            <li><a href = {{url_for('app_password')}}>App Password</a></li>
+            <li><a href = {{url_for('about')}}>About</a></li>
+            <li><a href ={{url_for('instructions')}}>Instructions</a></li>
+        </ul>
+    </nav>
+    <h1> How to use amazon alert system</h1>
+    <div class = "instructions-container">
+        <p>Step 1: Head over to the alert system page!</p>
+        <p>Step 2: Fill out your name in the input-field for name!</p>
+        <p>Step 3: Head over to amazon and grab the link of the item you want to keep on lookout!</p>
+        <p>Step 4: Paste that link in the input-field for amazon product link!</p>
+        <p>Step 5: Type in the price you would be willing to buy at in the desired price input-field!</p>
+        <p>Step 6: Type in your gmail in the input-field for email!</p>
+        <p>Step 7: Type in your app password (this is not your email password. Hit the app password tab to see how to get your app password) in the input-field app password</p>
+        <p>Step 8: Hit submit and wait for an email!</p>
+    </div>
+</body>
+</html>
